@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.all(15.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
+                    children: <Widget>[ 
                       Row(
                         children: <Widget>[
                           //picture
@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                             padding: const EdgeInsets.only(right: 10.0),
                             child: CircleAvatar(
                               backgroundImage: NetworkImage(
-                                "",
+                                "https://www.fakepersongenerator.com/Face/female/female1022944243378.jpg",
                               ),
                             ),
                           ),
