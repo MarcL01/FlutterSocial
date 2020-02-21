@@ -88,25 +88,30 @@ class DiscoverCard extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              CircleAvatar(
-                backgroundImage: NetworkImage(category.pfp),
-              ),
-              Text(
-                category.name,
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
-              ),
-              Text(
-                category.major,
-                style: TextStyle(color: Colors.white),
-              ),
-            ],
+        child: InkWell(
+          onTap: () {
+            print("clicked");
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundImage: NetworkImage(category.pfp),
+                ),
+                Text(
+                  category.name,
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.w900),
+                ),
+                Text(
+                  category.major,
+                  style: TextStyle(color: Colors.white),
+                ),
+              ],
+            ),
           ),
         ),
       ),
