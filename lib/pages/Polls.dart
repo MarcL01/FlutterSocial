@@ -20,8 +20,9 @@ class _PollsPageState extends State<PollsPage> {
           flex: 30,
           child: Card(
             margin: EdgeInsets.all(15.0),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(13.0)),
-            color: Color(0xFF5C00EE),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(13.0)),
+            color: Color(0xFF600EEA),
             child: Padding(
               padding: const EdgeInsets.all(10.0),
               child: Column(
@@ -31,7 +32,8 @@ class _PollsPageState extends State<PollsPage> {
                     child: Row(
                       children: <Widget>[
                         CircleAvatar(
-                          backgroundImage: NetworkImage(""),
+                          backgroundImage: NetworkImage(
+                              "https://www.fakepersongenerator.com/Face/male/male20171086735279511.jpg"),
                         ),
                         Text("Luke"),
                       ],
@@ -74,13 +76,31 @@ class _PollsPageState extends State<PollsPage> {
         Spacer(
           flex: 2,
         ),
-        MaterialButton(
-          onPressed: () {},
-          child: Text(
-            "Create a new poll",
-          ),
-          color: Color(0xFFFDB60A),
-        )
+        Flex(
+          direction: Axis.horizontal,
+          children: <Widget>[
+            Expanded(
+              child: RawMaterialButton(
+                padding: EdgeInsets.symmetric(vertical: 18.0),
+                elevation: 0,
+                child: Text(
+                  "Create a new poll",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                onPressed: () {},
+                fillColor: Color(0xFFFDB60A),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+              ),
+            ),
+          ],
+        ),
+        Spacer(),
       ],
     );
   }
@@ -92,7 +112,8 @@ class ButtonOrResults extends StatelessWidget {
   final String text;
   final double percent;
 
-  ButtonOrResults({this.showResults, this.clickButton, this.text, this.percent});
+  ButtonOrResults(
+      {this.showResults, this.clickButton, this.text, this.percent});
 
   @override
   Widget build(BuildContext context) {
@@ -115,12 +136,25 @@ class ButtonOrResults extends StatelessWidget {
         ],
       );
     } else {
-      child = RawMaterialButton(
-        onPressed: () {},
-        child: Text(this.text),
-        fillColor: Color(0xFF885AF2),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
-        elevation: 0.0,
+      child = child = Flex(
+        direction: Axis.horizontal,
+        children: <Widget>[
+          Expanded(
+            child: RawMaterialButton(
+              padding: EdgeInsets.symmetric(vertical: 20),
+              onPressed: () {},
+              child: Text(this.text, style: TextStyle(
+                color: Colors.white,
+                fontSize: 17.0,
+                fontWeight: FontWeight.w400
+              ),),
+              fillColor: Color(0xFF885AF2),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0)),
+              elevation: 5.0,
+            ),
+          ),
+        ],
       );
     }
     return Padding(
