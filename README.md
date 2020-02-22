@@ -19,3 +19,6 @@ In the command terminal, run the following commands:
 
 ## 📚 Resources
 [Mockups](https://www.ls.graphics/free/minimalistic-smartphones-mockups)
+
+## License
+[![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](https://choosealicense.com/licenses/wtfpl/)
