@@ -11,14 +11,17 @@ In the command terminal, run the following commands:
     $ flutter packages get
     $ flutter run
 
-## 📷 Screenshots (Coming Soon)
-![Coming Soon](https://via.placeholder.com/200x400.png?text=Coming+Soon!)
+## 📷 Screenshots
+![Mockup 1](https://raw.githubusercontent.com/BigMarco254/FlutterSocial/master/mockups/mockup-1.jpeg)
+![Mockup 2](https://raw.githubusercontent.com/BigMarco254/FlutterSocial/master/mockups/mockup-2.jpeg)
+![Mockup 4](https://raw.githubusercontent.com/BigMarco254/FlutterSocial/master/mockups/mockup-4.jpeg)
+![Mockup 5](https://raw.githubusercontent.com/BigMarco254/FlutterSocial/master/mockups/mockup-5.jpeg)
 
 ## 🤔Issues:
  * None yet! 🙏
 
 ## 📚 Resources
-[Mockups](https://www.ls.graphics/free/minimalistic-smartphones-mockups)
+[Mockups](https://shotsnapp.com)
 
 ## License
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](https://choosealicense.com/licenses/wtfpl/)
